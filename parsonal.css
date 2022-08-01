@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,300;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ 
+img.logo {
+    margin-left: -43px;
+    margin-top: 5px;
+    width: 25%;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #e1e9f7;
+}
+/* .sosails{
+    margin-bottom: -77px;
+    margin-top: -14px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+.sosail a i{
+    color:  #555;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sosail a i:hover{
+    color: aqua;
+} */
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px ;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    font-family:  cursive;
+    letter-spacing: .5px;
+}
+nav ul li a:hover{
+    color:red;
+
+}
+.detel{
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+
+
+
+.detel h1{
+    font-size: 56px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-family: initial;
+}
+.detel span{
+    color: orange;
+
+}
+.detel p{
+    color: #555;
+    line-height: 25px;
+}
+.detel a{
+    background: #212121;
+    padding: 11px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+    
+}
+
+.detel a:hover{
+    background: #504f4f;
+    color: aqua;
+}
+.image{
+    width: 45%;
+    height: 78%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.image img {
+   
+height: 100%;
+   
+position: absolute;
+   
+left: 50%;
+   
+bottom: 0;
+   
+transform: translateX(-50%);
+   
+transition: bottom 1s, left 1s;
+}
+
+.image:hover .shape{
+    bottom: 40px;
+
+}
+
+.image:hover .boy{
+    left: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+/* html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items:center;
+    background: linear-gradient(315deg, #ffffff ,#d7e1ec, );
+    background: #d7e1ec;
+} */
+.wrapper{
+    display: inline-flex;
+    margin-left: -20px;
+    margin-top: 32px;
+     
+}
+
+.wrapper .icon{
+    margin: 0px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.wrapper .icon span{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font-weight:600;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.wrapper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+
+}
+.wrapper .icon:hover span {
+    color: #fff;
+
+
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+    background: #3b5999;
+
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+    background: #46c1f5;
+
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before{
+    background: #e1306c;
+
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+    background: #333;
+
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before{
+    background: #e0392d;
+
+}
+    
